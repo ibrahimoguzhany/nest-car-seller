@@ -1,0 +1,31 @@
+### Create a new user
+
+POST  http://localhost:3000/auth/signup
+Content-Type:  application/json
+
+{
+    "email": "oguzhan@yilmax.com",
+    "password": "qwerasd123qawsd"
+}
+
+### Find a particular user with a given ID
+GET http://localhost:3000/auth/1
+
+
+
+### Get all users with email
+
+GET http://localhost:3000/auth?email=oguzhan@yilmax.com
+
+
+### Delete a user given id
+
+DELETE http://localhost:3000/auth/1
+
+### Update a user
+PATCH   http://localhost:3000/auth/3
+Content-Type:  application/json
+
+{
+    "password": "bbbbb"
+}
